@@ -6,7 +6,11 @@ class NpcsController < ApplicationController
   
     def create
         npc = Npc.create(npc_params)
+        if npc.valid?
         render json: npc
+        else
+          render json: npc.errors, status: 422
+        end
       end
 
       private
