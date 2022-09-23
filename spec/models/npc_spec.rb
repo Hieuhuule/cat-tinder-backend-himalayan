@@ -1,65 +1,24 @@
 require 'rails_helper'
 
-RSpec.describe Character, type: :model do
-  it 'checking to make sure there is a name for npc' do
-    npc = Npc.create(
-      address: 'Eastern Cave',
-      likes: 'lotsofthingsheretoeat',
-      image: 'string'
-    )
-
+RSpec.describe Npc, type: :model do
+  it 'should validate name' do
+    npc = Npc.create
     expect(npc.errors[:name]).to_not be_empty
   end
-
-  it 'checking to make sure there is an address for npc' do
-    npc = Npc.create(
-      name: 'string',
-      likes: 'lotsofthingsheretoeat',
-      image: 'string'
-    )
-
-    expect(npc.errors[:address]).to_not be_empty
-  end
-
-  it 'checking to make sure there are likes for npc' do
-    npc = Npc.create(
-      name: 'string',
-      address: 'eastern cave',
-      image: 'string'
-    )
-
+  it 'should validate likes' do
+    npc = Npc.create
     expect(npc.errors[:likes]).to_not be_empty
   end
-
-  it 'checking to make sure there is an image for npc' do
-    npc = Npc.create(
-      name: 'string',
-      likes: 'lotsofthingsheretoeat',
-      address: 'string'
-    )
-
+  it 'should validate address' do
+    npc = Npc.create
+    expect(npc.errors[:address]).to_not be_empty
+  end
+  it 'should validate image' do
+    npc = Npc.create
     expect(npc.errors[:image]).to_not be_empty
   end
-
-  it 'checking to make sure that likes are at least 10 characters long for npc' do
-    npc = Npc.create(
-      name: 'string',
-      likes: 'lots',
-      address: 'string'
-    )
-
-    expect(npc.errors[:likes]).to_not be_empty 
-    expect(character.errors[:likes]).to include("is too short (minimum is 10 characters)")
-  end
-
-  it 'checking to make sure that name is at least 3 characters long for npc' do
-    npc = Npc.create(
-      name: 'Le',
-      likes: 'lotsofthingsheretoeat',
-      address: 'string'
-    )
-
-    expect(npc.errors[:name]).to_not be_empty 
-    expect(npc.errors[:name]).to include("is too short (minimum is 3 characters)")
+  it 'is not valid if likes is less than 10 characters long' do
+    rashad = Npc.create name: 'Rashad', address: '123 Pelican Town', likes: 'Food', image: 'Image'
+    expect(rashad.errors[:likes]).to_not be_empty
   end
 end
