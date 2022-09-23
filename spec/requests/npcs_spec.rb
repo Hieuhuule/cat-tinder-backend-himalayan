@@ -57,5 +57,34 @@ RSpec.describe "Npcs", type: :request do
     json = JSON.parse(response.body)
     expect(json['image']).to include "can't be blank"
   end
+  it'check to see if likes are at least 10 characters long' do
+    npc_params = {
+      npc: {
+        address: '2',
+        likes: 'Walks',
+        name: 'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80'
+      }
+    }
+    
+    post '/npcs', params: npc_params
+      json = JSON.parse(response.body)
+    expect(response.status).to eq 422
+    expect(json['likes']).to include "is too short (minimum is 10 characters)"
+  end
+  it'check to see if name is at least 3 characters long' do
+    npc_params = {
+      npc: {
+        address: '2',
+        likes: 'Walks',
+        name: 'Le'
+      }
+    }
+    
+    post '/npcs', params: npc_params
+      json = JSON.parse(response.body)
+    expect(response.status).to eq 422
+    expect(json['name']).to include "is too short (minimum is 3 characters)"
+  end
 end
+
 
