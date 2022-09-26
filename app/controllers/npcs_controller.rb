@@ -27,14 +27,13 @@ class NpcsController < ApplicationController
   
     def destroy
       npc = Npc.find(params[:id])
-      npc.destroy(npc_params)
       if npc.destroy
         render json: npc, status: 204
       else
         render json: npc.errors
       end
     end
-    
+
     private
       def npc_params
         params.require(:npc).permit(:name, :address, :likes, :image)
