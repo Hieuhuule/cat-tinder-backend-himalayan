@@ -10,22 +10,98 @@ npcs = [
     {
         name: "Abigail",
         address: "Pierre's General Store",
-        likes: "Amethyst",
+        likes: "Amethyst, Banana Pudding",
         image: "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png"
     },
     {
-        
         name: "Emily",
         address: "2 Willow Lane",
-        likes: "Aquamarine",
+        likes: "Aquamarine, Cloth",
         image: "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png"
     },
     {
-        
         name: "Haley",
         address: "2 Willow Lane",
-        likes: "Coconut",
+        likes: "Coconut, Fruit Salad",
         image: "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png"
+    },
+    {
+        name: "Leah",
+        address: "Leah's Cottage",
+        likes: "Goat Cheese, Poppyseed Muffin",
+        image: "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png"
+    },
+    {
+        name: "Maru",
+        address: "24 Mountain Road",
+        likes: "Battery Pack, Cauliflower",
+        image: "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png"
+    },
+    {
+        name: "Penny",
+        address: "Trailer",
+        likes: "Diamond, Melon",
+        image: "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png"
+    },
+    {
+        name: "Alex",
+        address: "1 River Road",
+        likes: "Complete Breakfast, Salmon Dinner",
+        image: "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png"
+    },
+    {
+        name: "Elliot",
+        address: "Elliot's Cabin",
+        likes: "Crab Cakes, Lobster",
+        image: "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png"
+    },
+    {
+        name: "Harvey",
+        address: "Medical Clinic",
+        likes: "Coffee, Wine",
+        image: "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png"
+    },
+    {
+        name: "Sam",
+        address: "1 Willow Lane",
+        likes: "Cactus Fruit, Maple Bar",
+        image: "https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png"
+    },
+    {
+        name: "Sebastian",
+        address: "24 Mountain Road",
+        likes: "Sashimi, Pumpkin Soup",
+        image: "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png"
+    },
+    {
+        name: "Shane",
+        address: "Marnie's Ranch",
+        likes: "Beer, Pepper Poppers",
+        image: "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png"
+    },
+    {
+        name: "Caroline",
+        address: "Pierre's General Store",
+        likes: "Fish Taco, Green Tea",
+        image: "https://stardewvalleywiki.com/mediawiki/images/8/87/Caroline.png"
+    },
+    {
+        name: "Clint",
+        address: "Blacksmith",
+        likes: "Emerald, Gold Bar",
+        image: "https://stardewvalleywiki.com/mediawiki/images/3/31/Clint.png"
+    },
+    {
+        name: "Demetrius",
+        address: "24 Mountain Road",
+        likes: "Bean Hotpot, Rice Pudding",
+        image: "https://stardewvalleywiki.com/mediawiki/images/f/f9/Demetrius.png"
+    },
+    {
+        name: "Dwarf",
+        address: "Eastern Cave",
+        likes: "Ruby, Aquamarine",
+        image: "https://stardewvalleywiki.com/mediawiki/images/e/ed/Dwarf.png"
     }
 ]
 npcs.each do |each_npc|
