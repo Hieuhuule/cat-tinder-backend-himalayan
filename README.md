@@ -7,4 +7,5 @@ Instructions:
 
 
 NOTE: For full functionality, you must also have the FRONTEND portion of the app running as well.
+https://github.com/Hieuhuule/stardew-valley-frontend-companion-app
 
