@@ -1,24 +1,11 @@
-# README
+Instructions:
+1. Clone the repo to your local machine
+2. cd into the local repo
+3. run the terminal command `yarn`
+4. run the terminal command `bundle`
+5. start the local server with the terminal command `rails s` on localhost:3000
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+NOTE: For full functionality, you must also have the FRONTEND portion of the app running as well.
+https://github.com/Hieuhuule/stardew-valley-frontend-companion-app
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
